@@ -30,6 +30,10 @@ class FinalViewController: UIPageViewController, UIPageViewControllerDataSource,
                                animated: true,
                                completion: nil)
         }
+        //changing color on dots
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.white
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.red
+        
     }
     
 //making the scroll part transparent
@@ -42,7 +46,13 @@ class FinalViewController: UIPageViewController, UIPageViewControllerDataSource,
             view.backgroundColor = UIColor.clear
         }
     }
+    
+
+    
     }
+    
+
+    
     
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
